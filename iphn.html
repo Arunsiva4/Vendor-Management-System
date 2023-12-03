@@ -1,0 +1,93 @@
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>mobile description</title>
+            <link rel="stylesheet" href="style_01.css">
+        </head>
+        <body>
+            <div class="main">
+                <nav>
+                    <div class="logo">
+                        <img src="./Images/ic-logo.png">
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="#">cart</a></li>
+                        </ul>
+                    
+                    </div>
+                </nav>
+                <div class="information">
+                    <div class="overlay"></div>
+                    <img src="./Products/iphn_1.jpg" class="mobile" width="100%">
+                    <div id="circle">
+                        <div class="feature one">
+                            <img src="./Products/iphn_1.jpg" width="100%">
+                            <div>
+                                <h1>Capacity</h1>
+                                <p>128GB, 256GB, 512GB, 1TB</p>
+                            </div>
+                        </div>
+                        <div class="feature two" style="left:530px;width: 100px;height: 180px;">
+                            <img src="./Products/ip-2.jpg" width="100%">
+                            <div>
+                                <h1>Modes</h1>
+                                <p>Cinematic mode now in 4K Dolby Vision up to 30 fps</p>
+                            </div>
+                        </div>
+                        <div class="feature three" style="left: 165px;top: 30px;">
+                            <img src="./Products/ip-3.jpg" width="100%">
+                            <div>
+                                <h1>Product Dimension</h1>
+                                <p>15.40 cm (6.1-inch) Super Retina XDR display</p>
+                            </div>
+                        </div>
+                        <div class="feature four">
+                            <img src="./Products/ip-4.jpg" width="100%">
+                            <div>
+                                <h1>Battery</h1>
+                                <p>Up to 20 hours of video playback</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="controls">
+                    <img src="./Products/uparrow.png" id="upBtn">
+                    <h3>Features</h3>
+                    <img src="./Products/downarrow.png" id="downBtn">
+                </div>
+        
+        
+            </div>
+            
+            <script>
+                var circle = document.getElementById("circle");
+                var upBtn = document.getElementById("upBtn");
+                var downBtn = document.getElementById("downBtn");
+        
+                var rotatevalue = circle.style.transform;
+                var rotateSum;
+        
+                upBtn.onclick = function()
+                {
+                    rotateSum = rotatevalue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotatevalue = rotateSum;
+        
+                }
+                downBtn.onclick = function()
+                {
+                    rotateSum = rotatevalue + "rotate(90deg)";
+                    circle.style.transform = rotateSum;
+                    rotatevalue = rotateSum;
+        
+                }
+            </script>
+            <center><footer class="nai"><p>This is a Mobile Description page created....</p></footer></center>
+        </body>
+        </html>

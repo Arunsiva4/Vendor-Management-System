@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Registration page  </title>  
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+    body{
+        background-image: linear-gradient(to right,coral,purple);
+
+    }
+
+        .container{
+
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        form{
+
+            width: 600px;
+            height: 600px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.8);
+            border-radius: 10px;
+        }
+        p{
+            text-align: center;
+            color: beige;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        input,label{
+
+            margin-top: 10px;
+
+        }
+
+
+    </style>
+</head>  
+<body>  
+    <p>Create New Account</p>  
+    <div class="container">
+    <form>  
+    <label> Firstname </label>         
+    <input type="text" name="firstname" size="15"/> <br> <br>  
+    <label> Lastname: </label>         
+    <input type="text" name="lastname" size="15"/> <br> <br> 
+    Gender <br>
+    <input type="radio" name="male"/> Male 
+    <input type="radio" name="female"/> Female   
+    <input type="radio" name="other"/> Other  
+    <br>  
+    <br>  
+      
+    <label>   
+    Phone :  
+    </label>  
+    <input type="text" name="country code"  value="+91" size="2"/>   
+    <input type="text" name="phone" size="10"/> <br> <br>  
+    Address  
+    <br>  
+    <textarea cols="40" rows="5" value="address" style="resize:none;">  
+    </textarea>  
+    <br> <br>  
+    Email:  
+    <input type="email" id="email" name="email"/> <br>    
+    <br> <br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br>   
+    <br> <br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"> <br> <br>  
+    
+    <a href="index.html">Already have an account</a>
+    <a href="index.html" style="padding-left: 5px;">Back</a>
+    <a href="login.html" style="padding-left: 120px;">Create an Account</a>
+  
+    </form>  
+
+    </div>
+    </body>  
+    </html>  

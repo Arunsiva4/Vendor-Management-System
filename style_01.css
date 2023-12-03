@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #c041d6, #8ecdff);
+
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 200px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.information{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: translatey(-50%);
+}
+#circle{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    border-radius:50%;
+    transform: rotate(0deg);
+    transition: 1s;
+
+}
+.feature img{
+    width: 70px;
+
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 25px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 550px;
+    left: 200px;
+    right: 230px;
+    transform: rotate(90deg);
+}
+.two{
+    top: 330px;
+    left: 450px;
+   
+   
+}
+.three{
+    bottom: 550px;
+    left: 230px;
+    transform: rotate(-90deg);
+   
+}
+.four{
+    bottom: 310px;
+    right: 450px;
+    transform: rotate(-180deg);
+    
+
+}
+.mobile{
+    width: 90px;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls h3{
+    margin: 15px -35%;
+    color: #fff;
+}
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    /* transform: rotate(180deg); */
+}
+.overlay{
+    width: 0px;
+    height: 0px;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute;
+    top: -220px;
+    left: -150px;
+}
+.nai{
+
+    width: 100%;
+    height: 50px;
+    background: rgb(211, 153, 6);
+
+    
+}
+.nai p{
+    margin: 10px;
+    padding: 10px 190px;
+}
+.nai b{
+    color: rgb(151, 29, 51);
+}
+
+.feature-one img{
+
+
+    margin-top: 100px;
+
+}

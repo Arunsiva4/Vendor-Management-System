@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ProduCts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
+        
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .main-search-input-item {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    height: 50px;
+    position: relative;
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+.main-search-input {
+    background: rgba(255,255,255,0.2);
+    padding: 14px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.0);
+} }
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">VENDOR MANAGEMENT SYSTEM</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- <li><a href="index.html"><img src="./Images/ic-logo.png"alt="logo" width="125px"> VEND MGMT - PHP</a></li> -->
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="products.html">ProductS</a></li>
+        <li><a href="cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-square-fill" viewBox="0 0 16 16">
+            <path d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99Z"/>
+          </svg> My Cart</a></li>
+        <li><a href="order.html">Orders</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- 
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" id="flexCheckDefault" checked>
+    <label class="form-check-label" for="flexCheckDefault"> All           </label> <br>
+    <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked"> Electronics  </label>  <br>
+    <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked"> Fashion      </label>  <br>
+    <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked"> Medicines    </label>  <br>
+    <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked"> Sports       </label>  <br>
+  </div> -->
+<br>
+<center>
+<div class="main-search-input-wrap">
+    <div class="main-search-input fl-wrap">
+            <div class="main-search-input-item">
+                <input type="text"  value="" placeholder="Search Products...">                                
+            <button class="main-search-button">Search</button>
+            </div>
+    </div>                    
+</div>
+</center>
+                                    
+<br>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3></h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>MOBILES</p>
+      <a href="mob.html"><img src="./Images/cell_2.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>FASHION</p>
+      <a href="fash.html"><img src="./Images/black_2.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>MEDICINES</p>
+      <a href="medi.html"><img src="./Images/medi_2.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3">
+      <p>BIKES & CARS</p>
+   <a href="./MainProd/bikecar.html"><img src="./Images/New-Car-Bike_2.jpg" class="img-responsive" style="width: 100%" alt="Image"></a>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>JEWELS</p>
+      <a href="./MainProd/jewel.html"><img src="./Images/jewel_2.jpg" class="img-responsive" style="width:100%;height:250px;" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>LAPS & PC</p>
+      <a href="./MainProd/lappc.html"><img src="./Images/lap_comp_2.jpeg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p>JUICE</p>
+      <a href="./MainProd/juice.html"><img src="./Images/juice.webp" class="img-responsive" style="width:100%;height: 230px;" alt="Image"></a>
+    </div>
+    <div class="col-sm-3">
+      <p>Bakery</p>
+      <a href="./MainProd/sweet.html"><img src="./Images/sweet-shops_2.webp" class="img-responsive" style="width:100%;height: 230px;" alt="Image"></a>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <a href="products.html"><p>Back To Top</p></a>
+</footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

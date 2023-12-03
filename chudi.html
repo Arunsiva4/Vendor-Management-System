@@ -1,0 +1,93 @@
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>fashion description</title>
+            <link rel="stylesheet" href="style_01.css">
+        </head>
+        <body>
+            <div class="main">
+                <nav>
+                    <div class="logo">
+                        <img src="./Images/ic-logo.png">
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="#">cart</a></li>
+                        </ul>
+                    
+                    </div>
+                </nav>
+                <div class="information">
+                    <div class="overlay"></div>
+                    <img src="./Products/miraan_1.jpg" class="mobile" width="100%">
+                    <div id="circle">
+                        <div class="feature one">
+                            <img src="./Products/miraan_1.jpg" width="100%">
+                            <div>
+                                <h1>Fabric detail</h1>
+                                <p>Beautiful Stitched 100% pure Cotton printed Salwar Suit </p>
+                            </div>
+                        </div>
+                        <div class="feature two" style="left:500px;width: 150px;height: 150px;">
+                            <img src="./Products/miraan_1_back.jpg" width="100%">
+                            <div>
+                                <h1>Stitched Fabric Set</h1>
+                                <p>Cotton Top, Cotton Bottom and Cotton Dupatta</p>
+                            </div>
+                        </div>
+                        <div class="feature three" >
+                            <img src="./Products/miraan_1_front.jpg" width="100%">
+                            <div>
+                                <h1>Sleeve Type</h1>
+                                <p> 3/4 Sleeve and Round Neck</p>
+                            </div>
+                        </div>
+                        <div class="feature four">
+                            <img src="./Products/miraan_1_all.jpg" width="100%">
+                            <div>
+                                <h1>Stitched Material</h1>
+                                <p>M, L, XL, XXL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="controls">
+                    <img src="./Products/uparrow.png" id="upBtn">
+                    <h3>Features</h3>
+                    <img src="./Products/downarrow.png" id="downBtn">
+                </div>
+        
+        
+            </div>
+            
+            <script>
+                var circle = document.getElementById("circle");
+                var upBtn = document.getElementById("upBtn");
+                var downBtn = document.getElementById("downBtn");
+        
+                var rotatevalue = circle.style.transform;
+                var rotateSum;
+        
+                upBtn.onclick = function()
+                {
+                    rotateSum = rotatevalue + "rotate(-90deg)";
+                    circle.style.transform = rotateSum;
+                    rotatevalue = rotateSum;
+        
+                }
+                downBtn.onclick = function()
+                {
+                    rotateSum = rotatevalue + "rotate(90deg)";
+                    circle.style.transform = rotateSum;
+                    rotatevalue = rotateSum;
+        
+                }
+            </script>
+        <center><footer class="nai"><p>This is a Mobile Description page created....</p></footer></center>
+    </body>
+</html>
