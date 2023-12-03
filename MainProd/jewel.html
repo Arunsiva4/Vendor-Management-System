@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jewels</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .card-img-top{
+      width: 250px;
+      height: 250px;
+    }
+    .jwell{
+      height: 500px;
+      width: 100%;
+      background-color:deepskyblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .jwell .card{
+      display: inline-block;
+      margin: 0px 40px;
+    }
+    .nai{
+      position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(162, 228, 245);
+  color: black;
+  text-align: center;
+    }
+  </style>
+  </head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">VENDOR MANAGEMENT SYSTEM</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">ProductS</a></li>
+        <li><a href="cart.html">My Cart</a></li>
+        <li><a href="order.html">Orders</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jwell">
+<div class="card">
+  <a href="./ring.html"><img src="../Products/ring/ring.jpg" class="card-img-top" alt="op.jpg"></a>
+
+  <div class="card-body">
+    <h5 class="card-title">Ring</h5>
+    <p class="card-text"></p>
+    <a href="./ring.html" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card">
+  <a href="./stud.html"><img src="../Products/nose_stud/stud_1.jpg" class="card-img-top" alt="rm.jpg"></a>
+
+  <div class="card-body">
+    <h5 class="card-title">NOSE STUD</h5>
+    <p class="card-text"></p>
+    <a href="./stud.html" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card">
+  <a href="./ering.html"><img src="../Products/Ear_ring/ering_1.jpg"  class="card-img-top" alt="sam.jpg"></a>
+  <div class="card-body">
+    <h5 class="card-title">Earrings</h5>
+    <p class="card-text"></p>
+    <a href="./ering.html" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card">
+  <a href="./necklace.html"><img src="../Products/necklace/necklase.jpg"  class="card-img-top" alt=".jpg"></a>
+  <div class="card-body">
+    <h5 class="card-title">Necklace</h5>
+    <p class="card-text"></p>
+    <a href="./necklace.html" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<br>
+<center><footer class="nai"><p>CopyRights 2023 - Mayil City </p></footer></center>
+
+</body>
+</html>
